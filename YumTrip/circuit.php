@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['reserve'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= e($circuit['name']) ?></title>
-    <link rel="stylesheet" href="css/circuit.css">
+    <link rel="stylesheet" href="css/circuit.css?v=<?= filemtime(__DIR__ . '/css/circuit.css') ?>">
 </head>
 <body>
     <header class="topbar">

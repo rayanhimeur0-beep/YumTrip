@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['action'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panier</title>
-    <link rel="stylesheet" href="css/panier.css">
+    <link rel="stylesheet" href="css/panier.css?v=<?= filemtime(__DIR__ . '/css/panier.css') ?>">
 </head>
 <body>
     <header class="topbar">

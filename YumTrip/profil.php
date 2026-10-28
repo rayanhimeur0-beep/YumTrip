@@ -15,7 +15,7 @@ $successMessage = isset($_GET['success']) && $_GET['success'] === 'reservation' 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon profil</title>
-    <link rel="stylesheet" href="css/profil.css">
+    <link rel="stylesheet" href="css/profil.css?v=<?= filemtime(__DIR__ . '/css/profil.css') ?>">
 </head>
 <body>
     <header class="topbar">

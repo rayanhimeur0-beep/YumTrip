@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscription</title>
-    <link rel="stylesheet" href="css/inscription.css">
+    <link rel="stylesheet" href="css/inscription.css?v=<?= filemtime(__DIR__ . '/css/inscription.css') ?>">
 </head>
 <body>
     <header class="topbar">
