@@ -145,9 +145,7 @@ $user = current_user();
 
     <footer class="footer">
         <div class="container footer-inner">
-            <div>
-                <img class="brand-logo" src="assets/images/logo.png" alt="YumTrip - Food Tours"> – Découvrir Nice par le goût
-            </div>
+
             <div>Nice, France</div>
         </div>
     </footer>
