@@ -122,3 +122,80 @@ th {
         grid-template-columns: 1fr;
     }
 }
+
+body {
+    background: radial-gradient(ellipse at top left, #fff0e4 0, transparent 40%), #fffaf5;
+}
+
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.92);
+}
+
+.nav a:not(.brand) {
+    transition: color 180ms ease, transform 180ms ease;
+}
+
+.nav a:not(.brand):hover {
+    color: #c95a3f;
+    transform: translateY(-2px);
+}
+
+.card {
+    transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(42, 157, 143, 0.4);
+    box-shadow: 0 25px 48px rgba(17, 24, 39, 0.1);
+}
+
+tr {
+    transition: background-color 160ms ease;
+}
+
+tbody tr:hover {
+    background: #fff7f0;
+}
+
+.btn,
+button,
+input[type="submit"] {
+    border: 0;
+    background: linear-gradient(135deg, #35b3a3, #228779);
+    box-shadow: 0 5px 0 #176b61, 0 9px 18px rgba(42, 157, 143, 0.22);
+    transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+}
+
+.btn:hover,
+button:hover,
+input[type="submit"]:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.08);
+    box-shadow: 0 8px 0 #176b61, 0 14px 23px rgba(42, 157, 143, 0.3);
+}
+
+.btn:active,
+button:active,
+input[type="submit"]:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #176b61;
+}
+
+:focus-visible {
+    outline: 3px solid #f4a261;
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}

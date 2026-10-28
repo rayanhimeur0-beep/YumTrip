@@ -150,3 +150,101 @@ button,
         grid-template-columns: 1fr;
     }
 }
+
+body {
+    background: radial-gradient(ellipse at top left, #fff0e4 0, transparent 40%), #fffaf5;
+}
+
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.92);
+}
+
+.nav a:not(.brand) {
+    transition: color 180ms ease, transform 180ms ease;
+}
+
+.nav a:not(.brand):hover {
+    color: #c95a3f;
+    transform: translateY(-2px);
+}
+
+.card,
+.summary {
+    box-shadow: 0 16px 36px rgba(17, 24, 39, 0.07);
+    transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.card:hover,
+.summary:hover {
+    transform: translateY(-4px);
+    border-color: rgba(231, 111, 81, 0.42);
+    box-shadow: 0 23px 42px rgba(17, 24, 39, 0.11);
+}
+
+.thumb {
+    transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.item:hover .thumb {
+    transform: scale(1.05) rotate(-2deg);
+    box-shadow: 0 8px 18px rgba(17, 24, 39, 0.16);
+}
+
+button,
+.btn,
+input[type="submit"] {
+    transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+    box-shadow: 0 4px 0 #b94b34, 0 8px 16px rgba(201, 90, 63, 0.2);
+}
+
+.primary,
+button.primary,
+input.primary {
+    background: linear-gradient(135deg, #f27b58, #dc5d40);
+    color: #fff;
+}
+
+.secondary,
+button.secondary {
+    background: linear-gradient(135deg, #35b3a3, #228779);
+    color: #fff;
+    box-shadow: 0 4px 0 #176b61, 0 8px 16px rgba(42, 157, 143, 0.2);
+}
+
+button:hover,
+.btn:hover,
+input[type="submit"]:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.07);
+    box-shadow: 0 7px 0 #b94b34, 0 13px 22px rgba(201, 90, 63, 0.27);
+}
+
+.secondary:hover,
+button.secondary:hover {
+    box-shadow: 0 7px 0 #176b61, 0 13px 22px rgba(42, 157, 143, 0.27);
+}
+
+button:active,
+.btn:active,
+input[type="submit"]:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #b94b34;
+}
+
+:focus-visible {
+    outline: 3px solid #f4a261;
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}

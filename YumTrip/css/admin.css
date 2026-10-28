@@ -82,3 +82,86 @@ th {
     font-weight: 700;
     font-size: 0.75rem;
 }
+
+body {
+    background: radial-gradient(ellipse at top left, #fff0e4 0, transparent 38%), #fffaf5;
+}
+
+.topbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    backdrop-filter: blur(12px);
+    background: rgba(255, 255, 255, 0.92);
+}
+
+.nav a:not(.brand) {
+    transition: color 180ms ease, transform 180ms ease;
+}
+
+.nav a:not(.brand):hover {
+    color: #c95a3f;
+    transform: translateY(-2px);
+}
+
+.panel {
+    box-shadow: 0 18px 38px rgba(17, 24, 39, 0.07);
+    transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.panel:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 24px 44px rgba(17, 24, 39, 0.11);
+}
+
+tr {
+    transition: background-color 160ms ease;
+}
+
+tbody tr:hover {
+    background: #fff7f0;
+}
+
+button,
+.btn,
+input[type="submit"] {
+    border: 0;
+    border-radius: 12px;
+    padding: 12px 18px;
+    background: linear-gradient(135deg, #f27b58, #dc5d40);
+    color: #fff;
+    font: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #b94b34, 0 8px 16px rgba(201, 90, 63, 0.2);
+    transition: transform 180ms ease, box-shadow 180ms ease, filter 180ms ease;
+}
+
+button:hover,
+.btn:hover,
+input[type="submit"]:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.06);
+    box-shadow: 0 7px 0 #b94b34, 0 13px 22px rgba(201, 90, 63, 0.26);
+}
+
+button:active,
+.btn:active,
+input[type="submit"]:active {
+    transform: translateY(2px);
+    box-shadow: 0 2px 0 #b94b34;
+}
+
+:focus-visible {
+    outline: 3px solid #f4a261;
+    outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
