@@ -89,7 +89,7 @@ img {
 }
 
 .hero {
-    background: linear-gradient(115deg, rgba(24, 35, 44, 0.72), rgba(24, 35, 44, 0.16)), url('../assets/images/Site 1.png') center/cover no-repeat;
+    background: linear-gradient(115deg, rgba(24, 35, 44, 0.72), rgba(24, 35, 44, 0.16)), url('../image1.webp') center/cover no-repeat;
     min-height: 620px;
     display: flex;
     align-items: center;
