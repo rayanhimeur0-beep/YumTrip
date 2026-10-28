@@ -32,13 +32,13 @@ a {
 }
 
 .brand {
-    font-size: 2rem;
-    font-weight: 800;
-    color: #e76f51;
+    display: inline-flex;
+    align-items: center;
 }
 
-.brand span {
-    color: #2a9d8f;
+.brand-logo {
+    width: 132px;
+    height: auto;
 }
 
 .hero {

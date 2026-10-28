@@ -53,14 +53,13 @@ img {
 }
 
 .brand {
-    font-size: 1.9rem;
-    font-weight: 800;
-    letter-spacing: 0.04em;
-    color: var(--primary);
+    display: inline-flex;
+    align-items: center;
 }
 
-.brand span {
-    color: var(--secondary);
+.brand-logo {
+    width: 132px;
+    height: auto;
 }
 
 .menu {

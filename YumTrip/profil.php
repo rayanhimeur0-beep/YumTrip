@@ -14,13 +14,15 @@ $successMessage = isset($_GET['success']) && $_GET['success'] === 'reservation' 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon profil | YumTrip</title>
+    <title>Mon profil</title>
     <link rel="stylesheet" href="css/profil.css">
 </head>
 <body>
     <header class="topbar">
         <div class="container nav">
-            <a href="index.php" class="brand">Yum<span>Trip</span></a>
+            <a href="index.php" class="brand" aria-label="YumTrip - Food Tours, accueil">
+                <img class="brand-logo" src="assets/images/logo.png" alt="YumTrip - Food Tours">
+            </a>
             <div>
                 <a href="deconnexion.php" class="btn">Déconnexion</a>
             </div>
@@ -31,7 +33,7 @@ $successMessage = isset($_GET['success']) && $_GET['success'] === 'reservation' 
         <div class="grid">
             <aside class="card">
                 <h1><?= e($user['fullname']) ?></h1>
-                <div class="muted">Compte YumTrip</div>
+                <div class="muted">Compte client</div>
                 <div class="info">
                     <div><strong>Email :</strong> <?= e($user['email']) ?></div>
                     <div><strong>Statut :</strong> <?= $user['is_admin'] ? 'Administrateur' : 'Client' ?></div>

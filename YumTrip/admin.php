@@ -13,13 +13,15 @@ $orders = get_all_orders($db);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Administration | YumTrip</title>
+    <title>Administration</title>
     <link rel="stylesheet" href="css/admin.css">
 </head>
 <body>
     <header class="topbar">
         <div class="container nav">
-            <a href="index.php" class="brand">Yum<span>Trip</span></a>
+            <a href="index.php" class="brand" aria-label="YumTrip - Food Tours, accueil">
+                <img class="brand-logo" src="assets/images/logo.png" alt="YumTrip - Food Tours">
+            </a>
             <a href="profil.php">Retour profil</a>
         </div>
     </header>

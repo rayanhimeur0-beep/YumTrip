@@ -11,7 +11,7 @@ $user = current_user();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YumTrip | Découvrez Nice à travers ses saveurs</title>
+    <title>Découvrez Nice à travers ses saveurs</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -20,7 +20,9 @@ $user = current_user();
 <body>
     <header class="topbar">
         <div class="container nav">
-            <a href="index.php" class="brand">Yum<span>Trip</span></a>
+            <a href="index.php" class="brand" aria-label="YumTrip - Food Tours, accueil">
+                <img class="brand-logo" src="assets/images/logo.png" alt="YumTrip - Food Tours">
+            </a>
             <nav class="menu">
                 <a href="index.php">Accueil</a>
                 <a href="#circuits">Circuits</a>
@@ -144,7 +146,7 @@ $user = current_user();
     <footer class="footer">
         <div class="container footer-inner">
             <div>
-                <strong>YumTrip</strong> – Découvrir Nice par le goût
+                <img class="brand-logo" src="assets/images/logo.png" alt="YumTrip - Food Tours"> – Découvrir Nice par le goût
             </div>
             <div>Nice, France</div>
         </div>

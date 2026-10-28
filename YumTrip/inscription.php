@@ -21,13 +21,15 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscription | YumTrip</title>
+    <title>Inscription</title>
     <link rel="stylesheet" href="css/inscription.css">
 </head>
 <body>
     <header class="topbar">
         <div class="container nav">
-            <a href="index.php" class="brand">Yum<span>Trip</span></a>
+            <a href="index.php" class="brand" aria-label="YumTrip - Food Tours, accueil">
+                <img class="brand-logo" src="assets/images/logo.png" alt="YumTrip - Food Tours">
+            </a>
             <a href="connexion.php">Déjà inscrit ?</a>
         </div>
     </header>
@@ -35,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <main class="auth-wrap">
         <section class="visual">
             <div class="visual-box">
-                <h1>Créez votre compte YumTrip</h1>
+                <h1>Créez votre compte</h1>
                 <p>Réservez votre parcours gourmand dans Nice et accédez à vos circuits, votre historique et vos points de rendez-vous favoris.</p>
             </div>
         </section>
