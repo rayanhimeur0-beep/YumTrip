@@ -146,7 +146,7 @@ $user = current_user();
     <footer class="footer">
         <div class="container footer-inner">
 
-            <div>Nice, France</div>
+
         </div>
     </footer>
 </body>
