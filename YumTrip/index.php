@@ -43,7 +43,7 @@ $user = current_user();
                 <span class="eyebrow">Carte gourmande & culturelle</span>
                 <h1>Parcourez Nice en savourant ses meilleurs trésors.</h1>
                 <p>Des circuits guidés entre monuments, points de rendez-vous et spécialités culinaires locales. Une expérience immersive, facile à vivre et à partager.</p>
-                <p><strong>Vaness je t'aime</strong></p>
+                
                 <div class="cta-row">
                     <a href="#circuits" class="btn btn-primary">Découvrir les circuits</a>
                     <a href="inscription.php" class="btn btn-secondary">Créer mon compte</a>
