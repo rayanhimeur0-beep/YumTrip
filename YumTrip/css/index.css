@@ -89,7 +89,7 @@ img {
 }
 
 .hero {
-    background: linear-gradient(115deg, rgba(24, 35, 44, 0.72), rgba(24, 35, 44, 0.16)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+    background: linear-gradient(115deg, rgba(24, 35, 44, 0.72), rgba(24, 35, 44, 0.16)), url('../assets/images/Site 1.png') center/cover no-repeat;
     min-height: 620px;
     display: flex;
     align-items: center;
